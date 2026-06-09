@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học tiếng Hàn cùng ngữ pháp -고 싶어 | Cách diễn đạt mong muốn trong tiếng Hàn</title>
+  <meta name="description" content="Bạn muốn đến Hàn Quốc, nghe nhạc K-pop hay ăn tteokbokki? Học cách dùng '-고 싶어' – cấu trúc diễn đạt mong muốn cơ bản trong tiếng Hàn – qua ví dụ thực tế, sinh động và dễ nhớ!" />
+  <meta name="keywords" content="học tiếng Hàn, ngữ pháp tiếng Hàn, -고 싶어, 고 싶다, muốn trong tiếng Hàn, học tiếng Hàn cho người Việt" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:        #FFF8F0;
+      --surface:   #FFFFFF;
+      --accent1:   #FF6B6B;   /* coral – K-pop energy */
+      --accent2:   #FFD93D;   /* yellow – travel sunshine */
+      --accent3:   #6BCB77;   /* mint – fresh grammar note */
+      --text:      #2D2D2D;
+      --muted:     #7A7A7A;
+      --border:    #EEE0D6;
+      --tag-bg:    #FFF0E0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #FF6B6B 0%, #FF9A3C 50%, #FFD93D 100%);
+      padding: 60px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '✈️ 🎵 🍜';
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-8px); }
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(28px, 5vw, 48px);
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .hero-sub {
+      color: rgba(255,255,255,0.92);
+      font-size: 15px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* ── HOOK ── */
+    .hook {
+      background: var(--surface);
+      border-left: 5px solid var(--accent1);
+      border-radius: 0 16px 16px 0;
+      padding: 24px 28px;
+      margin-bottom: 36px;
+      box-shadow: 0 2px 16px rgba(255,107,107,0.08);
+    }
+    .hook p {
+      font-size: 17px;
+      line-height: 1.9;
+    }
+    .hook .vi { font-weight: 700; color: var(--accent1); }
+    .hook .ko { color: var(--muted); font-size: 14px; margin-top: 2px; }
+
+    /* ── SECTION HEADERS ── */
+    h2 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 22px;
+      color: var(--text);
+      margin: 48px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--accent2);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--accent1);
+      margin: 24px 0 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h3::before {
+      content: attr(data-icon);
+      font-style: normal;
+    }
+
+    /* ── RULE BOX ── */
+    .rule-box {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+    .rule-box .ko-form {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent1);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .rule-box .formula {
+      background: #FFF3CD;
+      border-radius: 8px;
+      padding: 8px 14px;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── TIP BADGE ── */
+    .tip {
+      background: #F0FFF4;
+      border: 1.5px dashed var(--accent3);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .tip::before { content: '💡 '; }
+
+    /* ── BLOCKQUOTE DIALOGUE ── */
+    blockquote {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 22px 26px;
+      margin: 20px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1.5px solid var(--border);
+    }
+    blockquote p {
+      font-size: 15px;
+      line-height: 2;
+      margin-bottom: 6px;
+    }
+    blockquote p:last-child { margin-bottom: 0; }
+    .speaker-a { color: var(--accent1); font-weight: 700; }
+    .speaker-b { color: #5B6FE0; font-weight: 700; }
+    .roman { color: var(--muted); font-size: 13px; font-style: italic; margin-left: 4px; }
+    .vi-trans { font-size: 13px; color: var(--muted); margin-left: 20px; display: block; }
+    .emoji-caption {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: right;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* ── VOCAB TABLE ── */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .vocab-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 14px 16px;
+      border: 1.5px solid var(--border);
+      text-align: center;
+    }
+    .vocab-card .ko { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; color: var(--text); }
+    .vocab-card .ro { font-size: 12px; color: var(--muted); font-style: italic; }
+    .vocab-card .vi { font-size: 13px; color: var(--accent1); margin-top: 4px; }
+
+    /* ── CONJUGATION TABLE ── */
+    .conj-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .conj-table th {
+      background: var(--accent1);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .conj-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .conj-table tr:last-child td { border-bottom: none; }
+    .conj-table .ko { font-family: 'Noto Serif KR', serif; font-weight: 700; }
+
+    /* ── EXERCISE ── */
+    .exercise-box {
+      background: linear-gradient(135deg, #667eea22, #764ba222);
+      border-radius: 18px;
+      padding: 28px 28px;
+      margin-top: 40px;
+      border: 1.5px solid #C4C9F0;
+    }
+    .exercise-box h3 { color: #5B6FE0; }
+    .exercise-box ul {
+      list-style: none;
+      margin-top: 14px;
+    }
+    .exercise-box ul li {
+      background: var(--surface);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      counter-increment: ex;
+      border-left: 4px solid #5B6FE0;
+    }
+    .exercise-box ul li strong { color: #5B6FE0; }
+    .answer-toggle {
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 6px;
+      text-decoration: underline dotted;
+    }
+    .answer { display: none; margin-top: 6px; color: var(--accent1); font-weight: 700; font-family: 'Noto Serif KR', serif; }
+    .answer.show { display: block; }
+
+    /* ── OUTRO ── */
+    .outro {
+      text-align: center;
+      margin-top: 50px;
+      padding: 32px 24px;
+      background: var(--surface);
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+    }
+    .outro p { color: var(--muted); font-size: 15px; margin-top: 8px; }
+
+    /* ── FOOTNOTE ── */
+    .footnote {
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 16px;
+      line-height: 1.8;
+    }
+    .footnote p { margin-bottom: 6px; }
+
+    @media (max-width: 480px) {
+      .hero { padding: 40px 16px 32px; }
+      .container { padding: 24px 14px 60px; }
+      blockquote { padding: 16px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════ HERO ════════════════ -->
+<header class="hero">
+  <span class="hero-tag">Ngữ pháp tiếng Hàn · Sơ cấp</span>
+  <h1>고 싶어 — Nói "muốn" trong tiếng Hàn<br>nghe ngay như người Hàn thật sự! 🇰🇷</h1>
+  <p class="hero-sub">học tiếng Hàn · ngữ pháp tiếng Hàn · -고 싶다 · du lịch Hàn Quốc · K-pop</p>
+</header>
+
+<!-- ════════════════ CONTENT ════════════════ -->
+<main class="container">
+
+  <!-- HOOK -->
+  <section class="hook">
+    <p class="vi">Bạn đang xem ảnh Seoul lúc 2 giờ sáng và trong lòng chỉ muốn hét lên một câu duy nhất — <strong>"Tôi muốn đến Hàn Quốc QUÁ ĐI!"</strong></p>
+    <p class="ko">새벽 2시에 서울 사진을 보면서 속으로만 외치고 있는 그 말 — "한국에 가고 싶어 죽겠어!"</p>
+    <br>
+    <p class="vi">Thay vì chỉ <em>cảm thấy</em>, hôm nay hãy học cách <strong>nói thẳng ra</strong> bằng tiếng Hàn luôn nhé! Cấu trúc <strong>-고 싶다</strong> sẽ giúp bạn diễn đạt mọi ước muốn — từ chuyến du lịch đến bài nhạc K-pop bạn muốn nghe mãi không chán.</p>
+    <p class="ko">느끼기만 하지 말고, 오늘 한국어로 바로 말해버려요! -고 싶다 하나면 여행부터 K-pop까지 다 표현돼요.</p>
+  </section>
+
+  <!-- VOCAB -->
+  <h2>🗂️ Từ vựng cần biết trước</h2>
+  <p style="margin-bottom:16px; color:var(--muted); font-size:14px;">Học nhanh mấy từ này trước rồi ví dụ sẽ dễ hiểu hơn nhiều!</p>
+  <div class="vocab-grid">
+    <div class="vocab-card">
+      <div class="ko">가다</div>
+      <div class="ro">[ga-da]</div>
+      <div class="vi">đi</div>
+    </div>
+    <div class="vocab-card">
+      <div class="ko">먹다</div>
+      <div class="ro">[meok-da]</div>
+      <div class="vi">ăn</div>
+    </div>
+    <div class="vocab-card">
+      <div class="ko">듣다</div>
+      <div class="ro">[deut-da]</div>
+      <div class="vi">nghe</div>
+    </div>
+    <div class="vocab-card">
+      <div class="ko">만나다</div>
+      <div class="ro">[man-na-da]</div>
+      <div class="vi">gặp</div>
+    </div>
+    <div class="vocab-card">
+      <div class="ko">배우다</div>
+      <div class="ro">[bae-u-da]</div>
+      <div class="vi">học</div>
+    </div>
+    <div class="vocab-card">
+      <div class="ko">살다</div>
+      <div class="ro">[sal-da]</div>
+      <div class="vi">sống / ở</div>
+    </div>
+  </div>
+
+  <!-- GRAMMAR RULES -->
+  <h2>📐 Cấu trúc -고 싶다 — 3 dạng cần nắm</h2>
+
+  <h3 data-icon="①">Dạng cơ bản (nói chuyện thông thường)</h3>
+  <div class="rule-box">
+    <span class="ko-form">동사 + 고 싶어요</span>
+    <p>Đây là dạng <strong>lịch sự</strong> dùng được với hầu hết mọi người — bạn bè lớn tuổi hơn, người quen, nhân viên cửa hàng.</p>
+    <p>Cách tạo: bỏ <strong>-다</strong> ở cuối động từ gốc, thêm <strong>-고 싶어요</strong>.</p>
+    <div class="formula">가다 → 가 + 고 싶어요 → 가고 싶어요 ✅</div>
+  </div>
+  <div class="tip">
+    Tin vui: cấu trúc này KHÔNG bị biến đổi theo batchim hay không batchim nhé! Cứ thêm -고 싶어요 vào là xong.
+  </div>
+
+  <h3 data-icon="②">Dạng trang trọng (lịch sự cao)</h3>
+  <div class="rule-box">
+    <span class="ko-form">동사 + 고 싶습니다</span>
+    <p>Dùng khi nói chuyện với <strong>sếp, giáo viên, người lớn tuổi hơn nhiều</strong>, hoặc trong môi trường công việc / phỏng vấn. Nghe rất chuẩn và chuyên nghiệp!</p>
+    <div class="formula">배우다 → 배우 + 고 싶습니다 → 배우고 싶습니다 ✅</div>
+  </div>
+
+  <h3 data-icon="③">Dạng thân mật (nói với bạn bè, người nhỏ tuổi hơn)</h3>
+  <div class="rule-box">
+    <span class="ko-form">동사 + 고 싶어</span>
+    <p>Dạng <strong>반말 (banmal)</strong> — chỉ dùng với bạn bè thân, em, hoặc khi nhắn tin thoải mái. Đừng dùng với người lạ hoặc người lớn tuổi hơn nhé!</p>
+    <div class="formula">먹다 → 먹 + 고 싶어 → 먹고 싶어 ✅</div>
+  </div>
+  <div class="tip">
+    Muốn hỏi người khác thì đổi thành câu hỏi nhé: 싶어요? / 싶어? / 싶으세요? — chỉ cần lên giọng ở cuối là xong!
+  </div>
+
+  <!-- PAST TENSE -->
+  <h2>⏪ Đã muốn rồi — dạng quá khứ</h2>
+  <div class="rule-box">
+    <span class="ko-form">동사 + 고 싶었어요</span>
+    <p>Khi bạn <em>đã từng muốn</em> làm gì đó (nhưng chưa chắc đã làm), dùng dạng quá khứ: thêm <strong>-었-</strong> vào giữa.</p>
+    <div class="formula">싶어요 → 싶었어요 &nbsp;|&nbsp; 싶어 → 싶었어</div>
+  </div>
+
+  <table class="conj-table">
+    <thead>
+      <tr><th>Tình huống</th><th>Dạng câu</th><th>Ví dụ</th><th>Nghĩa</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Lịch sự · hiện tại</td><td class="ko">-고 싶어요</td><td class="ko">한국에 가고 싶어요</td><td>Tôi muốn đến Hàn Quốc</td></tr>
+      <tr><td>Trang trọng · hiện tại</td><td class="ko">-고 싶습니다</td><td class="ko">배우고 싶습니다</td><td>Tôi muốn học</td></tr>
+      <tr><td>Thân mật · hiện tại</td><td class="ko">-고 싶어</td><td class="ko">떡볶이 먹고 싶어</td><td>Tao muốn ăn tteokbokki</td></tr>
+      <tr><td>Lịch sự · quá khứ</td><td class="ko">-고 싶었어요</td><td class="ko">BTS 콘서트에 가고 싶었어요</td><td>Tôi đã muốn đi concert BTS</td></tr>
+      <tr><td>Thân mật · quá khứ</td><td class="ko">-고 싶었어</td><td class="ko">너 만나고 싶었어</td><td>Tao đã muốn gặp mày</td></tr>
+    </tbody>
+  </table>
+
+  <!-- DIALOGUES -->
+  <h2>💬 Hội thoại thực tế — cùng đọc thử nào!</h2>
+  <p style="margin-bottom:18px; color:var(--muted); font-size:14px;">Đọc to lên nhé — phát âm chuẩn hơn khi đọc thành tiếng đấy!</p>
+
+  <!-- Dialogue 1 -->
+  <blockquote>
+    <p><span class="speaker-a">A:</span> 방학에 뭐 하고 싶어요? <span class="roman">[bang-hak-e mwo ha-go si-peo-yo?]</span></p>
+    <span class="vi-trans">→ Kỳ nghỉ bạn muốn làm gì?</span>
+    <p><span class="speaker-b">B:</span> 한국에 가고 싶어요! 특히 제주도요. <span class="roman">[han-guk-e ga-go si-peo-yo! teuk-hi je-ju-do-yo.]</span></p>
+    <span class="vi-trans">→ Tôi muốn đến Hàn Quốc! Đặc biệt là Jeju!</span>
+    <p><span class="speaker-a">A:</span> 저도요! 같이 가고 싶어요~ <span class="roman">[jeo-do-yo! ga-chi ga-go si-peo-yo~]</span></p>
+    <span class="vi-trans">→ Tôi cũng vậy! Tôi muốn đi cùng nhau~</span>
+    <div class="emoji-caption">✈️ Đặt vé đi thôi, lo gì tiền sau tính 😂</div>
+  </blockquote>
+
+  <!-- Dialogue 2 -->
+  <blockquote>
+    <p><span class="speaker-a">A:</span> 요즘 무슨 노래 듣고 싶어? <span class="roman">[yo-jeum mu-seun no-rae deut-go si-peo?]</span></p>
+    <span class="vi-trans">→ Dạo này mày muốn nghe bài gì?</span>
+    <p><span class="speaker-b">B:</span> BTS 노래 계속 듣고 싶어. 특히 'Butter'! <span class="roman">[BTS no-rae gye-sok deut-go si-peo. teuk-hi Butter!]</span></p>
+    <span class="vi-trans">→ Tao muốn nghe nhạc BTS mãi. Đặc biệt là 'Butter'!</span>
+    <p><span class="speaker-a">A:</span> 나도! 진짜 중독됐어. <span class="roman">[na-do! jin-jja jung-dok-dwaet-seo.]</span></p>
+    <span class="vi-trans">→ Tao cũng vậy! Nghiện thật sự rồi.</span>
+    <div class="emoji-caption">🎵 Butter nghe lần thứ 47 hôm nay… bình thường mà 😇</div>
+  </blockquote>
+
+  <!-- Dialogue 3 – past tense -->
+  <blockquote>
+    <p><span class="speaker-a">A:</span> 어제 왜 연락 안 했어? <span class="roman">[eo-je wae yeon-nak an haet-seo?]</span></p>
+    <span class="vi-trans">→ Hôm qua sao mày không nhắn tin?</span>
+    <p><span class="speaker-b">B:</span> 미안… 사실 떡볶이 먹고 싶었어서 혼자 먹으러 갔어. <span class="roman">[mi-an… sa-sil tteok-bo-ki meok-go si-peot-seo-seo hon-ja meo-geu-reo gat-seo.]</span></p>
+    <span class="vi-trans">→ Sorry… thật ra tao muốn ăn tteokbokki nên tự đi ăn một mình.</span>
+    <p><span class="speaker-a">A:</span> ……나도 불렀지. <span class="roman">[na-do bul-reot-ji.]</span></p>
+    <span class="vi-trans">→ ……Gọi tao đi chứ.</span>
+    <div class="emoji-caption">😤 Bạn thân mà không rủ ăn tteokbokki — tội nặng đấy!</div>
+  </blockquote>
+
+  <!-- EXERCISE -->
+  <section class="exercise-box">
+    <h3 data-icon="✏️" style="color:#5B6FE0;">Luyện tập — thử làm xem sao!</h3>
+    <p style="font-size:14px; color:var(--muted); margin-top:8px;">Ấn "Xem đáp án" để kiểm tra nhé~</p>
+    <ul>
+      <li>
+        <strong>1.</strong> Bạn muốn ăn ramen Hàn Quốc. Nói lịch sự với người bạn gặp lần đầu.<br>
+        <em>(라면 먹다 → ___고 싶어요)</em>
+        <span class="answer-toggle" onclick="toggleAnswer(this)">Xem đáp án 👀</span>
+        <div class="answer">라면 먹고 싶어요!</div>
+      </li>
+      <li>
+        <strong>2.</strong> Nhắn tin cho bạn thân: "Tao muốn đến concert BLACKPINK!"<br>
+        <em>(가다 · BLACKPINK 콘서트 → ___고 싶어)</em>
+        <span class="answer-toggle" onclick="toggleAnswer(this)">Xem đáp án 👀</span>
+        <div class="answer">BLACKPINK 콘서트에 가고 싶어!</div>
+      </li>
+      <li>
+        <strong>3.</strong> Kể lại: "Hôm qua tôi đã muốn học tiếng Hàn suốt ngày."<br>
+        <em>(배우다 → ___고 싶었어요)</em>
+        <span class="answer-toggle" onclick="toggleAnswer(this)">Xem đáp án 👀</span>
+        <div class="answer">하루 종일 한국어를 배우고 싶었어요.</div>
+      </li>
+      <li>
+        <strong>4.</strong> Nói trang trọng với giáo viên: "Tôi muốn sống ở Seoul."<br>
+        <em>(살다 · 서울 → ___고 싶습니다)</em>
+        <span class="answer-toggle" onclick="toggleAnswer(this)">Xem đáp án 👀</span>
+        <div class="answer">서울에서 살고 싶습니다.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- OUTRO -->
+  <div class="outro">
+    <div style="font-size:40px;">🥞✨</div>
+    <h3 style="font-family:'Noto Serif KR',serif; font-size:20px; margin-top:12px;">이제 말해봐요!</h3>
+    <p>Bình luận bên dưới: bạn đang muốn làm gì nhất bây giờ?<br>Dùng <strong>-고 싶어요</strong> để trả lời nhé!</p>
+    <p style="margin-top:14px;">예) <strong style="color:var(--accent1);">저는 지금 한국 드라마 보고 싶어요! 😄</strong></p>
+  </div>
+
+  <!-- FOOTNOTE -->
+  <div class="footnote">
+    <p>* <strong>Chú ý về 듣다:</strong> Động từ <em>듣다</em> là động từ bất quy tắc ㄷ — khi gặp nguyên âm, ㄷ → ㄹ (예: 들어요). Tuy nhiên với <em>-고 싶다</em>, bạn KHÔNG gặp nguyên âm, nên giữ nguyên: <strong>듣고 싶어요</strong> ✅ (không phải 들고 싶어요 ❌).</p>
+    <p>* <strong>싶어하다 vs 싶어요:</strong> Khi nói về <em>người khác</em> (không phải bản thân), dùng <strong>-고 싶어하다</strong>. Ví dụ: 친구가 한국에 가고 싶어해요. (Bạn tôi muốn đến Hàn Quốc.) — Nội dung này sẽ được hướng dẫn chi tiết ở bài trung cấp!</p>
+  </div>
+
+</main>
+
+<script>
+  function toggleAnswer(el) {
+    const ans = el.nextElementSibling;
+    ans.classList.toggle('show');
+    el.textContent = ans.classList.contains('show') ? '숨기기 🙈' : 'Xem đáp án 👀';
+  }
+</script>
+</body>
+</html>
